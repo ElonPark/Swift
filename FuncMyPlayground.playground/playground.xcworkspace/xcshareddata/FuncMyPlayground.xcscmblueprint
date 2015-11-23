@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8918B5A4C8DCA782159FEA05F51E8948228C968E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8918B5A4C8DCA782159FEA05F51E8948228C968E" : 0,
+    "8C2784E123A1B700B7D19D198B89DFB77A473DDB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8F974F21-AB48-48A1-8AB0-38394B61318D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8918B5A4C8DCA782159FEA05F51E8948228C968E" : "Swift\/",
+    "8C2784E123A1B700B7D19D198B89DFB77A473DDB" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FuncMyPlayground",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FuncMyPlayground.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NebulaPark\/Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8918B5A4C8DCA782159FEA05F51E8948228C968E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NebulaPark\/Java.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8C2784E123A1B700B7D19D198B89DFB77A473DDB"
+    }
+  ]
+}

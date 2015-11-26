@@ -7,17 +7,17 @@
     "82595E98A0DBCC137DA9F41B5E55951B27226EDA" : 0,
     "F6D02A5000B8FA39A95353B9185C8CBF96D238A7" : 0
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8F974F21-AB48-48A1-8AB0-38394B61318D",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6CC97A8A-1F31-44C3-907B-4B66185F0F21",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "82595E98A0DBCC137DA9F41B5E55951B27226EDA" : "",
     "F6D02A5000B8FA39A95353B9185C8CBF96D238A7" : "Swift\/"
   },
-  "DVTSourceControlWorkspaceBlueprintNameKey" : "FuncMyPlayground",
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MethodMyPlayground",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FuncMyPlayground.playground",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MethodMyPlayground.playground",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NebulaPark\/Java.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NebulaPark\/Swift.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82595E98A0DBCC137DA9F41B5E55951B27226EDA"
     },

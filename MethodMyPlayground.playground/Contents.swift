@@ -288,7 +288,7 @@ k.description
 //final 프로퍼티, 메소드, 클래스에 붙일 수도 있다.
 //final 클래스는 상속 자체가 차단되는 클래스이다.
 //final이 선언된 클래스는 그 자체를 인스턴스로 만들어 사용할 수만 있다.
-*/
+
 
 //타입 캐스팅
 //자식 클래스는 본래의 타입 태신 부모 클래스 타입으로 선언하여 사용할 수 있다.
@@ -412,31 +412,406 @@ if anySUV != nil {
 }
 
 
+if let anyCar = anyCar as? SUV{
+    print("\(anySUV!) 캐스팅이 성공하였습니다.")
+}
+
+//강제 캐스팅
+let anySUV1 = anyCar as! SUV
+print("\(anySUV!) 캐스팅이 성공하였습니다.")
+
+
+
+//Any, AnyObject
+/*클래스 타입에 상관없이 모든 종류의 클래스 타입을 저장할 수 있는 범용 타입의 클래스이다. 클래스 중에서 가장 추상화된 클래스이며,
+상속관계가 직접 성립하는것은 아니지만 가장 상위 클래스이다. 모든 클래스의 인스턴스는 AnyObjet클래스 타입으로 선언된 변수나 
+상수에 할당할 수 있다.*/
+
+var allCar : AnyObject = Car()
+allCar = SUV()
+
+//모든 클래스의 인스턴스는 AnyObject 타입으로 선언된 함수나 메소드의 인자값으로 사용될 수 있으며, AnyObject 타입을 반환하는 
+//함수나 메소드는 모든 종류의 클래스를 반환할 수 있다는 의미로 해석되기도 한다.
+func move(param : AnyObject) -> AnyObject {
+    return param
+}
+
+move(Car())
+move(Vehicle())
+
+//배열, 딕셔너리, 집합에서 AnyObject 타입을 사용하면 모든 클래스를 저장할 수 있다.
+var list1 = [AnyObject]()
+list1.append(Vehicle())
+list1.append(Car())
+list1.append(SUV())
+
+/*AnyObject타입으로 선언된 값은 타입 캐스팅을 통해 구체적인 타입으로 변환할 수 있다.모든 클래스의 최상위 클래스임으로 항상
+다운 캐스팅 수행된다. 상속관계가 성립하지 않아도 예외로 타입 캐스팅할 수 있지만 실제로 저장된 인스턴스 타입과 관계 없는 타입으로
+캐스팅하고자 하면 오류가 발생한다.*/
+let obj : AnyObject = SUV()
+
+if let SUV = obj as? SUV{
+    print("\(SUV) 캐스팅이 성공하였습니다.")
+}
+
+//AnyObject 타입은 클래스만 정의할 수 있지만 Any객체는 모든 타입에서 사용할 수 있다.
+var value : Any = "Sample String"
+value = 3
+value = false
+value = {() in print("함수가 실행됩니다.")}
+value = [1, 3, 5, 7, 9]
+
+//함수나 메소드의 인자값 또는 반환값이 Any 타입이라면 객체의 종류에 상관없이 입력 받을 수 있거나 모든 종류의 객체를  반환할 수 있다.
+
+func name(param : Any) {
+    print(param)
+}
+
+name(3)
+name(false)
+name([1, 3, 5, 7, 9])
+name({() in print(">>>")})
+
+//Any 타입으로 집단 자료형을 정의하면 모든 종류의 객체를 구분 없이 저장할 수 있다.
+var list2 = [Any]()
+list2.append(3)
+list2.append(false)
+list2.append([1, 3, 5, 7, 9])
+
+//Any 타입은 매우 극단적으로 추상화된 타입으로 Any타입에 할당된 객체가 사용할 수 있는 프로퍼티나 메소드는 아예 제공되지 않는다.
+//Any 타입으로 정의하면 모든 값을 제한 없이 받을 수 있지만 그 값을 이용하여 할 수 있는 것은 거의 없다.
 
 
 
 
+//초기화
+//init 구문
+//초기화 블록은 인스턴스가 생성되는 시점에서 호출되는 블록으로 생성자라고 부르기도한다.
+struct Resolution {
+    var width = 0
+    var height = 0
+    
+    //Int만을 인자값으로 받는 초기화 블록 정의
+    init(width : Int){
+        self.width = width
+    }
+}
+
+class VideoMode {
+    var resolution = Resolution(width : 2048)
+    var interlaced = false
+    var frameRate = 0.0
+    var name : String?
+    
+    //인스턴스 생성할 때 interlaced, frameRate 두 개의 인자값을 받는 초기화 블록
+    init(interlaced : Bool, frameRate : Double) {
+        self.interlaced = interlaced
+        self.frameRate = frameRate
+    }
+    
+}
 
 
+//Resolution 구조체에 대한 인스턴스 생성
+let resolution = Resolution(width : 4096)
+
+//ViedeoMode 클래스에 대한 인스턴스를 생성
+let videoMode = VideoMode(interlaced: true, frameRate: 40.0)
+
+/*초기화 블록에서 정의된 매개변수는 함수에서의 뵈부 매개변수명까지 그 역할을 겸한다. 초기화 블록에 정의된 모든 인자값은 매개변수명
+까지 함꼐 입력해야 하며, 첫번째 매개변수 명은 생략할 수 있었던 함수와 달리 모든 인자값에 매개변수명을 붙여야 한다.
+ 구조체나 클래스의 init 구문이 인자값의 개수와 형식이 서로 다른 여러개의 init 구문을 선언할 수 있다.*/
+class VideoMode1 {
+    var resolution = Resolution(width : 2048)
+    var interlaced = false
+    var frameRate = 0.0
+    var name : String?
+    
+    //초기화될 때 name 인자값만 받는 init 구문
+    init(name : String) {
+        self.name = name
+    }
+    
+    //초기화될 때 interlaced 인자값만 받는 init구문
+    init(interlaced : Bool) {
+        self.interlaced = interlaced
+    }
+    
+    //인스턴스 생성할 때 interlaced, frameRate 두 개의 인자값을 받는 초기화 블록
+    init(interlaced : Bool, frameRate : Double) {
+        self.interlaced = interlaced
+        self.frameRate = frameRate
+    }
+    
+    //초기화될 때 interlaced, frameRate, name 세 개의 인자값을 받는 init구문
+    init(interlaced : Bool, frameRate : Double, name : String) {
+        self.interlaced = interlaced
+        self.frameRate = frameRate
+        self.name = name
+    }
+    
+}
+//VideoMode 클래스에 대한 인스턴스를 생성하고 상수에 해당
+let nameVideoMode = VideoMode1(name: "홍길동")
+let simpleVideoMode = VideoMode1(interlaced: true)
+let doubleVideoMode = VideoMode1(interlaced: true, frameRate: 40.0)
+let tripleVideoMode = VideoMode1(interlaced: true, frameRate: 40.0, name: "홍길동")
+
+//init구문이 작성되면 작성된 init 구문이 어떤 인자값 형식을 갖는가에 상관없이 그 객체의 기본 초기화 구문은 더는 제공되지 않는다.
+class VideoMode {
+    var resolution = Resolution(width : 2048)
+    var interlaced = false
+    var frameRate = 0.0
+    var name : String?
+    
+    //초기화될 때 name 인자값만 받는 init 구문
+    init(name : String) {
+        self.name = name
+    }
+}
+
+//VideoMode 클래스에 대한 인스턴스를 생성하고 상수에 할당
+//let defaultVideoMode = VideoMode() //에러
+let nameVideoMode = VideoMode(name: "홍길동")
+
+//커스텀 형식의 init 구문을 추가하고 나면 빈 인자값 형식의 기본 초기화 구문을 사용할 수 없다.
+class VideoMode {
+    var resolution = Resolution(width : 2048)
+    var interlaced = false
+    var frameRate = 0.0
+    var name : String?
+    
+    init() {
+        
+    }
+    
+    //초기화될 때 name 인자값만 받는 init 구문
+    init(name : String) {
+        self.name = name
+    }
+}
+
+//VideoMode 클래스에 대한 인스턴스를 생성하고 상수에 할당
+let defaultVideoMode = VideoMode() //에러 없음
+let nameVideoMode = VideoMode(name: "홍길동")
+
+//기본값이 지정된 초기화 구문에서는 인자값을 생략할 수 있는데, 이때 생략된 인자값 대신 기본값이 인자값으로 사용된다.
+//이런 매개변수 기본값의 특성을 사용하면 자동으로 빈 인자 타입의 초기화 구문을 만들 수 있다.
+
+class VideoMode {
+    var name : String?
+    //초기화될 때 name 인자값만 받는 init 구문
+    init(name : String = "") {
+        self.name = name
+    }
+}
+//VideoMode 클래스에 대한 인스턴스를 생성하고 상수에 할당
+let defaultVideoMode = VideoMode() //에러 없음
+let nameVideoMode = VideoMode(name: "홍길동")
+
+//위와 같이 인자값이 있는 초기화 구문에서 매개변수에 기본값을 지정하면 다음 두가지 형태의 인스턴스 생성 형식이 만들어진다.
+// VideoMode()
+// VideoMode(name:)
 
 
+//구조체에 멤버와이즈 초기화 구문은 커스텀형식의 init 구문이 추가되면 더 이상 기본으로 제공되지 않는다.
+struct Resolution {
+    var width = 0
+    var height = 0
+}
+
+//구조체에서 기본으로 제공해주는 두 가지 타입의 초기화 구문
+let defaultResolution = Resolution()
+let initResolution = Resolution(width: 4096, height: 1024)
+
+//클래스는 이러한 멤버와이즈 초기화 구문이 제공되지 않으므로 기본적으로 저장 프로퍼티에 반드시 초기값이 할당되어 있어야한다.
+//초기값을 할당하지 않는 방법은 프로퍼티타입을 옵셔널로 설정하는 것 밖에 없다.
+
+/*init 구문을 별도로 작성하지 않으면, 옵셔널 타입을 제외한 모든 저장 프로퍼티는 선언 시 초기값이 할당되어야 한다.
+  옵셔널 타입을 제외하고, 초기값이 할당되지 않은 모든 저장 프로퍼티는 init 구문 내부에서 초기값이 할당되어야 한다.*/
+
+//초기화 구문의 오버라이딩
+//초기화 구문을 오버라이딩할 때는 메소드와 마찬가지로 override 키워드를 붙여야한다.
+//부모 클래스에서 명시적으로 선언된 적이 없더라도 이를 상속받은 자식 클래스에서는 반드시 오버라이딩 형식으로 작성해야 한다.
+class Base {
+    
+}
+
+class ExBase : Base {
+    override init() {
+        
+    }
+}
+
+/*초기화 구문을 오버라이딩하면 부모 클래스에서 정의한 초기화 구문이 실행되지 않는다. 부모 클래스의 기본 초기화 구문에서 프로퍼티를 
+초기화 했다면, 자식 클래스에서 기본 초기화 구문을 오버라이딩함으로써 부모 클래스 프로퍼티의 초기화가 누락되고 프로퍼티가 초기화 
+되지 못하는 상황은 오류를 발생시키므로, 이런 상황을 방지 하고자 초기화 구문을 오버라이딩할 경우 부모 클래스에서 정의된 초기화 
+구문을 내부적으로 호출해야 하는데, 오버라이딩된 초기화 구문 내부에 super.init 구문을 쓰면된다.*/
+class Base {
+    var baseValue : Double
+    
+    init(inputValue : Double) {
+        self.baseValue = inputValue
+    }
+}
+
+class ExBase : Base {
+    override init(inputValue: Double) {
+        super.init(inputValue: 10.5)
+    }
+}
+
+/*baseValue 프로퍼티는 옵셔널 타입이 아닌 일반 타입으로 반드시 초기값이 있어야 하지만 초기화 구문의 오버라이딩으로 인해 초기값
+할당 구문이 누락되면 오류가 발생한다. 이러한 오류를 방지하기 위해 오버라이딩된 초기화 구문에서 부모 클래스랴스의 초기화 구문을
+직접 호출해주게 된다.*/
 
 
+//초기화 구문 델리게이션
+/*연쇄적으로 오버라이딩된 자식 클래스의 초기화 구문에서 부모 클래스의 초기화 구문에 대한 호출이 발생하는 것을 초기화 구문 
+델리게이션이라고 한다. 기본 초기화된 구문을 제외한 나머지 초기화 구문을  오버라이딩할 때는 반드시 부모 클래스의 초기화 구문을 
+호출함으로써 델리게이션 처리를 해 주어야 한다.
+
+ 부모 클래스에 기본 초기화 구문만 정의되어 있거나 기본 초기화 구문이 아예 명시적으로 정의되어 있지 않은 상태에서 자식 클래스에서 
+init() 구문을 명시적으로 정의하기 위해 오버라이딩할 때는 super.init()구문을 호출해주지 않아도 자동으로 부모 클래스의 초기화 구문
+호출이 이루어 진다. 이때 초기화 구문 호출은 자식 클래스부터 역순으로 이루어진다.*/
+
+class Base {
+    var baseValue : Double
+    init() {
+        self.baseValue = 0.0
+        print("Base Init")
+    }
+}
+
+class ExBase : Base {
+    override init() {
+        print("ExBase Init")
+    }
+}
+
+let ex = ExBase()
+
+//부모 클래스에서 기본 초기화 구문 외에 다른 형식의 초기화 구문이 추가 되어 있다면, 자식 클래스에서 기본 초기화 구문을 오버라이딩
+//할때 명시적으로 부모 클래스의 기본 초기화 구문을 호출 해야한다.
+class Base {
+    var baseValue : Double
+    init() {
+        self.baseValue = 0.0
+        print("Base Init")
+    }
+    
+    init(baseValue : Double){
+        self.baseValue = baseValue
+    }
+}
+
+class ExBase : Base {
+    override init() {
+        super.init()
+        print("ExBase Init")
+    }
+}
+
+//옵셔널체인
+//옵셔널 타입의 문제점: if구문을 통해 값의 안정성 여부를 검사해야 한다는것
 
 
+//클래스나 구조체의 인스턴스가 옵셔널 타입으로 서언될 경우 프로퍼티와 메소드를 호출하기 위해서는 매번 if 구문을 통해
+//옵셔널 인스턴스의 정상값 여부를 검사해야한다.
+struct Human {
+    var name : String?
+    var man : Bool = true
+}
 
+var boy : Human? = Human(name: "홍길동", man: true)
 
+if boy != nil {
+    if boy!.name != nil{
+        print("이름은 \(boy!.name!)입니다.")
+    }
+}
 
+//옵셔널 비강제 해제 구문
+if let b = boy {
+    if let name = b.name {
+        print("이름은 \(name)입니다.")
+    }
+}
 
+//어떤 방법도 if 구문의 처리를 피할 수 없다.
 
+//Human 구조체를 다른 구조체나 클래스가 프로퍼티로 사용하되, 이를 옵셔널 타입으로 설정하면 name 프로퍼티를 참조하기 위한 코드는 더
+//복잡해 진다.
+struct Company {
+    var ceo : Human?
+    var companyName : String?
+}
 
+var startup : Company? = Company(ceo: Human(name: "나대표", man: false), companyName: "루비페이퍼")
 
+//ceo프로퍼티의 내부 프로퍼티 name 참조 과정
+if let company = startup { //startup의 옵셔널 타입 해제
+    if let ceo = company.ceo{ //ceo 프로퍼티의 옵셔널 해제
+        if let name = ceo.name{ //name 옵셔널 해제
+            print("대표이사의 이름은 \(name)입니다.")
+        }
+    }
+}
 
+//혹은 옵셔널 강제해제를 통해 name을 얻을 수 잇지만 런타임 오류가 발생할 수 있다.
+if let name = startup!.ceo!.name {
+    print("대표이사의 이름은 \(name)입니다.")
+}
 
+//옵셔널 체인
+//if 구문을 쓰지 않고도 간결하게 사용할 수 있는 코드를 작성할 수 있다.
+//이는 Objective-C의 특성 중 하나로 nil 객체에 메시지를 보내도 아무런 오류가 발생하지 않는 것이다.
 
+//이러한 특성을 이용해 위의 여러번 중첩된 if구문을 옵셔널 체인을 이용해 작성해 보면
+if let name = startup?.ceo?.name{
+    print("대표이사의 이름은 \(name)입니다.")
+}
+// 참조가 아닌 할당이라면 다음과 같이 작성한다.
+startup?.ceo?.name = "홍길동"
+//이때 만약 startup 변수나 ceo 프로퍼티가 빈 값이라면 아무런 값도 할당되지 않은 채로 구문은 종료되지만 오류는 발생하지 않는다.
 
+/*옵셔널 체인의 특징
+ 1.옵셔널 체인으로 참조된 값은 무조건 옵셔널 타입으로 반환된다.
+ 2.옵셔널 체인 과정에서 옵셔널 타입들이 여러 번 겹쳐 있더라도 중접되지 않고 한번만 처리된다. */
 
+//옵셔널 체인으로 참조된 값은 반드시 옵셔널 타입으로 반환된다. 옵셔널 체인 구문에서 마지막에 오는 값이 옵셔널 타입이 아닌 일반값
+//이라도 옵셔널 체인을 통해 참조했다면 이 값은 옵셔널 타입으로 변경됩니다.
+print(startup?.ceo?.man)
+//옵셔널 타입으로 반환되는 이유는 옵셔널 체인이라는 구문 자체가 nil을 반환할 가능성을 내포하고 있기 때문이다.
+*/
+//옵셔널 체인은 프로퍼티뿐만 아니라 메소드에서도 사용할 수 있다.
+//메소드에서는 주로 반환값이 구조체나, 클래스, 또는 열거형 등으로 구성되어 그 내부에 있는 프로퍼티나 메소드를 사용해야 할 때 
+//옵셔널 체인을 적절히 사용하연 호율적이다.
+struct Human {
+    var name : String?
+    var man : Bool = true
+}
 
+struct Company{
+    var ceo : Human?
+    var companyName : String?
+    
+    func getCEO() -> Human? {
+        return self.ceo
+    }
+}
 
+var someCompany : Company? = Company(ceo: Human(name: "팀 쿡", man: true), companyName: "Apple inc")
 
+let name = someCompany?.getCEO()?.name
+if name != nil {
+    print("대표이사의 이름은 \(name!)입니다.")
+}
+/*메소드 자체를 옵셔널 체인으로 사용하는 것이 아니라 메소드의 결과값을 옵셔널 체인으로 사용하는 것이다. 메소드 자체를 옵셔널 체인
+형식으로 사용하는 것은 옵셔널 메소드일 때만 가능하다.
 
+옵셔널 체인 구문 someCompany?.getCEO()?.name
+옵셔널 강제 해제 someCompany!.getCEO()!.name
+
+옵셔널 체인이 적용된 객체가 nil이라면 오류가 발생하지 않지만 옵셔널 강제해제를 사용한 객체가 nil일 경우 런타임 오류가 발생한다.
+*/

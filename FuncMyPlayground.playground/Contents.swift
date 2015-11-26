@@ -510,7 +510,7 @@ value.sort({return $0 > $1})
 value.sort({ $0 > $1})
 
 //연산자 함수를 사용 하여 요약 가능
-value.sort( > ) //?! 요약쩝니다.
+value.sort( > )
 
 
 

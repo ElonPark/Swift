@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Swift05-SceneTransition03.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>33EA0C251C2BFCF200C6440A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33EA0C391C2BFCF300C6440A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33EA0C441C2BFCF300C6440A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

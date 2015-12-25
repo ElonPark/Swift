@@ -14,6 +14,9 @@
 		33EA0C701C2C4B0100C6440A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33EA0C6E1C2C4B0100C6440A /* LaunchScreen.storyboard */; };
 		33EA0C7B1C2C4B0100C6440A /* Swift05_SceneTransition04Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA0C7A1C2C4B0100C6440A /* Swift05_SceneTransition04Tests.swift */; };
 		33EA0C861C2C4B0100C6440A /* Swift05_SceneTransition04UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA0C851C2C4B0100C6440A /* Swift05_SceneTransition04UITests.swift */; };
+		33EA0C941C2C552400C6440A /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA0C931C2C552400C6440A /* Page1ViewController.swift */; };
+		33EA0C961C2C56E800C6440A /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA0C951C2C56E800C6440A /* Page2ViewController.swift */; };
+		33EA0C981C2C617400C6440A /* NewSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA0C971C2C617400C6440A /* NewSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		33EA0C811C2C4B0100C6440A /* Swift05-SceneTransition04UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift05-SceneTransition04UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33EA0C851C2C4B0100C6440A /* Swift05_SceneTransition04UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift05_SceneTransition04UITests.swift; sourceTree = "<group>"; };
 		33EA0C871C2C4B0100C6440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33EA0C931C2C552400C6440A /* Page1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
+		33EA0C951C2C56E800C6440A /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		33EA0C971C2C617400C6440A /* NewSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				33EA0C651C2C4B0100C6440A /* AppDelegate.swift */,
 				33EA0C671C2C4B0100C6440A /* ViewController.swift */,
+				33EA0C931C2C552400C6440A /* Page1ViewController.swift */,
+				33EA0C951C2C56E800C6440A /* Page2ViewController.swift */,
+				33EA0C971C2C617400C6440A /* NewSegue.swift */,
 				33EA0C691C2C4B0100C6440A /* Main.storyboard */,
 				33EA0C6C1C2C4B0100C6440A /* Assets.xcassets */,
 				33EA0C6E1C2C4B0100C6440A /* LaunchScreen.storyboard */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EA0C941C2C552400C6440A /* Page1ViewController.swift in Sources */,
 				33EA0C681C2C4B0100C6440A /* ViewController.swift in Sources */,
+				33EA0C981C2C617400C6440A /* NewSegue.swift in Sources */,
+				33EA0C961C2C56E800C6440A /* Page2ViewController.swift in Sources */,
 				33EA0C661C2C4B0100C6440A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

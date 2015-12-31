@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33256ABD1C352DF1009BAF68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33256ABC1C352DF1009BAF68 /* AppDelegate.swift */; };
+		33256ABF1C352DF1009BAF68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33256ABE1C352DF1009BAF68 /* ViewController.swift */; };
+		33256AC21C352DF1009BAF68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33256AC01C352DF1009BAF68 /* Main.storyboard */; };
+		33256AC41C352DF1009BAF68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33256AC31C352DF1009BAF68 /* Assets.xcassets */; };
+		33256AC71C352DF1009BAF68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33256AC51C352DF1009BAF68 /* LaunchScreen.storyboard */; };
+		33256AD21C352DF2009BAF68 /* Swiftris_PorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33256AD11C352DF2009BAF68 /* Swiftris_PorkTests.swift */; };
+		33256ADD1C352DF2009BAF68 /* Swiftris_PorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33256ADC1C352DF2009BAF68 /* Swiftris_PorkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33256ACE1C352DF2009BAF68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33256AB11C352DF1009BAF68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33256AB81C352DF1009BAF68;
+			remoteInfo = Swiftris_Pork;
+		};
+		33256AD91C352DF2009BAF68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33256AB11C352DF1009BAF68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33256AB81C352DF1009BAF68;
+			remoteInfo = Swiftris_Pork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33256AB91C352DF1009BAF68 /* Swiftris_Pork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftris_Pork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33256ABC1C352DF1009BAF68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33256ABE1C352DF1009BAF68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33256AC11C352DF1009BAF68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33256AC31C352DF1009BAF68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33256AC61C352DF1009BAF68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33256AC81C352DF1009BAF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33256ACD1C352DF2009BAF68 /* Swiftris_PorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swiftris_PorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33256AD11C352DF2009BAF68 /* Swiftris_PorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftris_PorkTests.swift; sourceTree = "<group>"; };
+		33256AD31C352DF2009BAF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33256AD81C352DF2009BAF68 /* Swiftris_PorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swiftris_PorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33256ADC1C352DF2009BAF68 /* Swiftris_PorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftris_PorkUITests.swift; sourceTree = "<group>"; };
+		33256ADE1C352DF2009BAF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33256AB61C352DF1009BAF68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33256ACA1C352DF2009BAF68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33256AD51C352DF2009BAF68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33256AB01C352DF1009BAF68 = {
+			isa = PBXGroup;
+			children = (
+				33256ABB1C352DF1009BAF68 /* Swiftris_Pork */,
+				33256AD01C352DF2009BAF68 /* Swiftris_PorkTests */,
+				33256ADB1C352DF2009BAF68 /* Swiftris_PorkUITests */,
+				33256ABA1C352DF1009BAF68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33256ABA1C352DF1009BAF68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33256AB91C352DF1009BAF68 /* Swiftris_Pork.app */,
+				33256ACD1C352DF2009BAF68 /* Swiftris_PorkTests.xctest */,
+				33256AD81C352DF2009BAF68 /* Swiftris_PorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33256ABB1C352DF1009BAF68 /* Swiftris_Pork */ = {
+			isa = PBXGroup;
+			children = (
+				33256ABC1C352DF1009BAF68 /* AppDelegate.swift */,
+				33256ABE1C352DF1009BAF68 /* ViewController.swift */,
+				33256AC01C352DF1009BAF68 /* Main.storyboard */,
+				33256AC31C352DF1009BAF68 /* Assets.xcassets */,
+				33256AC51C352DF1009BAF68 /* LaunchScreen.storyboard */,
+				33256AC81C352DF1009BAF68 /* Info.plist */,
+			);
+			path = Swiftris_Pork;
+			sourceTree = "<group>";
+		};
+		33256AD01C352DF2009BAF68 /* Swiftris_PorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				33256AD11C352DF2009BAF68 /* Swiftris_PorkTests.swift */,
+				33256AD31C352DF2009BAF68 /* Info.plist */,
+			);
+			path = Swiftris_PorkTests;
+			sourceTree = "<group>";
+		};
+		33256ADB1C352DF2009BAF68 /* Swiftris_PorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33256ADC1C352DF2009BAF68 /* Swiftris_PorkUITests.swift */,
+				33256ADE1C352DF2009BAF68 /* Info.plist */,
+			);
+			path = Swiftris_PorkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33256AB81C352DF1009BAF68 /* Swiftris_Pork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33256AE11C352DF2009BAF68 /* Build configuration list for PBXNativeTarget "Swiftris_Pork" */;
+			buildPhases = (
+				33256AB51C352DF1009BAF68 /* Sources */,
+				33256AB61C352DF1009BAF68 /* Frameworks */,
+				33256AB71C352DF1009BAF68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swiftris_Pork;
+			productName = Swiftris_Pork;
+			productReference = 33256AB91C352DF1009BAF68 /* Swiftris_Pork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33256ACC1C352DF2009BAF68 /* Swiftris_PorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33256AE41C352DF2009BAF68 /* Build configuration list for PBXNativeTarget "Swiftris_PorkTests" */;
+			buildPhases = (
+				33256AC91C352DF2009BAF68 /* Sources */,
+				33256ACA1C352DF2009BAF68 /* Frameworks */,
+				33256ACB1C352DF2009BAF68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33256ACF1C352DF2009BAF68 /* PBXTargetDependency */,
+			);
+			name = Swiftris_PorkTests;
+			productName = Swiftris_PorkTests;
+			productReference = 33256ACD1C352DF2009BAF68 /* Swiftris_PorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33256AD71C352DF2009BAF68 /* Swiftris_PorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33256AE71C352DF2009BAF68 /* Build configuration list for PBXNativeTarget "Swiftris_PorkUITests" */;
+			buildPhases = (
+				33256AD41C352DF2009BAF68 /* Sources */,
+				33256AD51C352DF2009BAF68 /* Frameworks */,
+				33256AD61C352DF2009BAF68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33256ADA1C352DF2009BAF68 /* PBXTargetDependency */,
+			);
+			name = Swiftris_PorkUITests;
+			productName = Swiftris_PorkUITests;
+			productReference = 33256AD81C352DF2009BAF68 /* Swiftris_PorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33256AB11C352DF1009BAF68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Nebula_MAC;
+				TargetAttributes = {
+					33256AB81C352DF1009BAF68 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FF89HDESAD;
+					};
+					33256ACC1C352DF2009BAF68 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FF89HDESAD;
+						TestTargetID = 33256AB81C352DF1009BAF68;
+					};
+					33256AD71C352DF2009BAF68 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FF89HDESAD;
+						TestTargetID = 33256AB81C352DF1009BAF68;
+					};
+				};
+			};
+			buildConfigurationList = 33256AB41C352DF1009BAF68 /* Build configuration list for PBXProject "Swiftris_Pork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33256AB01C352DF1009BAF68;
+			productRefGroup = 33256ABA1C352DF1009BAF68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33256AB81C352DF1009BAF68 /* Swiftris_Pork */,
+				33256ACC1C352DF2009BAF68 /* Swiftris_PorkTests */,
+				33256AD71C352DF2009BAF68 /* Swiftris_PorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33256AB71C352DF1009BAF68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33256AC71C352DF1009BAF68 /* LaunchScreen.storyboard in Resources */,
+				33256AC41C352DF1009BAF68 /* Assets.xcassets in Resources */,
+				33256AC21C352DF1009BAF68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33256ACB1C352DF2009BAF68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33256AD61C352DF2009BAF68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33256AB51C352DF1009BAF68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33256ABF1C352DF1009BAF68 /* ViewController.swift in Sources */,
+				33256ABD1C352DF1009BAF68 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33256AC91C352DF2009BAF68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33256AD21C352DF2009BAF68 /* Swiftris_PorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33256AD41C352DF2009BAF68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33256ADD1C352DF2009BAF68 /* Swiftris_PorkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33256ACF1C352DF2009BAF68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33256AB81C352DF1009BAF68 /* Swiftris_Pork */;
+			targetProxy = 33256ACE1C352DF2009BAF68 /* PBXContainerItemProxy */;
+		};
+		33256ADA1C352DF2009BAF68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33256AB81C352DF1009BAF68 /* Swiftris_Pork */;
+			targetProxy = 33256AD91C352DF2009BAF68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33256AC01C352DF1009BAF68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33256AC11C352DF1009BAF68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33256AC51C352DF1009BAF68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33256AC61C352DF1009BAF68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33256ADF1C352DF2009BAF68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33256AE01C352DF2009BAF68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33256AE21C352DF2009BAF68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Swiftris_Pork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.blog.tjddns1222.Swiftris-Pork";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33256AE31C352DF2009BAF68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Swiftris_Pork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.blog.tjddns1222.Swiftris-Pork";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33256AE51C352DF2009BAF68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Swiftris_PorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.blog.tjddns1222.Swiftris-PorkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swiftris_Pork.app/Swiftris_Pork";
+			};
+			name = Debug;
+		};
+		33256AE61C352DF2009BAF68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Swiftris_PorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.blog.tjddns1222.Swiftris-PorkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swiftris_Pork.app/Swiftris_Pork";
+			};
+			name = Release;
+		};
+		33256AE81C352DF2009BAF68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Swiftris_PorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.blog.tjddns1222.Swiftris-PorkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Swiftris_Pork;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		33256AE91C352DF2009BAF68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Swiftris_PorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.blog.tjddns1222.Swiftris-PorkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Swiftris_Pork;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33256AB41C352DF1009BAF68 /* Build configuration list for PBXProject "Swiftris_Pork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33256ADF1C352DF2009BAF68 /* Debug */,
+				33256AE01C352DF2009BAF68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33256AE11C352DF2009BAF68 /* Build configuration list for PBXNativeTarget "Swiftris_Pork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33256AE21C352DF2009BAF68 /* Debug */,
+				33256AE31C352DF2009BAF68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		33256AE41C352DF2009BAF68 /* Build configuration list for PBXNativeTarget "Swiftris_PorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33256AE51C352DF2009BAF68 /* Debug */,
+				33256AE61C352DF2009BAF68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		33256AE71C352DF2009BAF68 /* Build configuration list for PBXNativeTarget "Swiftris_PorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33256AE81C352DF2009BAF68 /* Debug */,
+				33256AE91C352DF2009BAF68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33256AB11C352DF1009BAF68 /* Project object */;
+}

@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoResizingPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="fGC-LW-Wss"/>
+                        <viewControllerLayoutGuide type="bottom" id="sE4-Iw-DCX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbQ-Uk-sMC">
+                                <rect key="frame" x="16" y="28" width="157" height="301"/>
+                                <color key="backgroundColor" red="0.0" green="0.6537957553" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qmg-w9-gmy">
+                                <rect key="frame" x="202" y="28" width="157" height="301"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LM2-9u-y4f">
+                                <rect key="frame" x="16" y="337" width="343" height="301"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.95895305539999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sE4-Iw-DCX" firstAttribute="top" secondItem="LM2-9u-y4f" secondAttribute="bottom" constant="29" id="6aR-CG-IDg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PbQ-Uk-sMC" secondAttribute="leading" id="8PZ-5F-qZf"/>
+                            <constraint firstItem="PbQ-Uk-sMC" firstAttribute="top" secondItem="fGC-LW-Wss" secondAttribute="bottom" constant="8" id="ACJ-IV-xiy"/>
+                            <constraint firstItem="LM2-9u-y4f" firstAttribute="top" secondItem="PbQ-Uk-sMC" secondAttribute="bottom" constant="8" id="DS8-1m-eto"/>
+                            <constraint firstItem="PbQ-Uk-sMC" firstAttribute="height" secondItem="LM2-9u-y4f" secondAttribute="height" id="Ftb-da-msM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qmg-w9-gmy" secondAttribute="trailing" id="Na5-uP-Cza"/>
+                            <constraint firstItem="PbQ-Uk-sMC" firstAttribute="width" secondItem="Qmg-w9-gmy" secondAttribute="width" id="byy-2k-85m"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="LM2-9u-y4f" secondAttribute="leading" id="fH8-RP-OJL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LM2-9u-y4f" secondAttribute="trailing" id="gcr-Dz-3KX"/>
+                            <constraint firstItem="Qmg-w9-gmy" firstAttribute="leading" secondItem="PbQ-Uk-sMC" secondAttribute="trailing" constant="29" id="n54-wU-gvk"/>
+                            <constraint firstItem="Qmg-w9-gmy" firstAttribute="top" secondItem="fGC-LW-Wss" secondAttribute="bottom" constant="8" id="syU-RJ-EF1"/>
+                            <constraint firstItem="PbQ-Uk-sMC" firstAttribute="height" secondItem="Qmg-w9-gmy" secondAttribute="height" id="u8q-nz-sKo"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="302.5" y="383.5"/>
         </scene>
     </scenes>
 </document>

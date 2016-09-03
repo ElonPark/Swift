@@ -226,112 +226,112 @@ for ; ; {
 }
 
 */ //렉걸려서 이전 실습 코드는 주석처리함
-
-for var i = 1; i < 10; i++ {
-    for var j = 1; j  < 10; j++
-    {
-        print("\(i) X \(j) = \(i * j)")
-    }
-    print("\n")
-}
-
-for row in 1...5{
-    print("2 X \(row) = \(row * 2)")
-}
-
-var lang = "swift"
-for char in lang.characters
-{
-    print("개별 문자는 \(char)입니다.")
-}
-
-//루프생략 _를 사용하여 루프상수를 생략할 수 있다.
-let size = 5
-let padChar = "0"
-var keyWord = "3"
-
-for _ in 1...size
-{
-    keyWord = padChar + keyWord
-}
-print("\(keyWord)")
-
-var n =  2
-while n < 1000
-{
-    n *= 2
-}
-print(n)
-
-//repeat ~ while문
-//코드블록을 먼저 실행한 다음, 조건식을 평가하여 반복 여부를 결정한다.
-repeat {
-n =  n * 2
-}
-while n < 1000
-print(n)
-
-//조건문
-
-var adult = 19
-var age = 15
-
-if age < adult {
-    print("당신은 미성년자네요")
-}else{
-    print("당신은 성인이네요")
-}
-
-var browser = "Safari"
-var browserName : String
-
-if browser == "IE"
-{
-    browserName = "인터넷 익스플로러"
-}else if browser == "FF"
-{
- browserName = "파이어폭스"
-}else if browser == "Opera"
-{
-    browserName = "오페라"
-}else if browser == "Safari"
-{
-    browserName = "사파리"
-}
-else
-{
-    browserName = "알려지지 않은 브라우저"
-}
-
-print("현재 사용중인 브라우져는 \(browserName)입니다")
-
-//guard 구문
-func divide(base : Int)
-{
-    guard base != 0 else
-    { //조건이 참일때는 실행되는 블록이 없음
-        print("연산할 수 없습니다.")
-        return
-    }
-    
-    let result = 100 / base
-    print(result)
-}
-
-divide(0)
-divide(1)
-
-//#available 구문 OS버전을 구분하기 위해 사용한다.
-if #available(iOS 9, OSX 10.10, watchOS 1, *) //마지막은 *로 구분한다.
-{
-    //iOS 9, OSX 10.10, watchOS 1 용 API 구문
-}else{
-    //API를 사용하지 못했을때에 대한 실패 처리
-}
-
-//fallthrough 구문
-//swift에서 switch ~ case문은  각 case 블록마다 사용해야하는 break구문을 생략할 수 있다.
-//case에서 break구문 없이 사용하고 싶을때는 fallthrough을 사용한다.
+//
+//for var i = 1; i < 10; i++ {
+//    for var j = 1; j  < 10; j++
+//    {
+//        print("\(i) X \(j) = \(i * j)")
+//    }
+//    print("\n")
+//}
+//
+//for row in 1...5{
+//    print("2 X \(row) = \(row * 2)")
+//}
+//
+//var lang = "swift"
+//for char in lang.characters
+//{
+//    print("개별 문자는 \(char)입니다.")
+//}
+//
+////루프생략 _를 사용하여 루프상수를 생략할 수 있다.
+//let size = 5
+//let padChar = "0"
+//var keyWord = "3"
+//
+//for _ in 1...size
+//{
+//    keyWord = padChar + keyWord
+//}
+//print("\(keyWord)")
+//
+//var n =  2
+//while n < 1000
+//{
+//    n *= 2
+//}
+//print(n)
+//
+////repeat ~ while문
+////코드블록을 먼저 실행한 다음, 조건식을 평가하여 반복 여부를 결정한다.
+//repeat {
+//n =  n * 2
+//}
+//while n < 1000
+//print(n)
+//
+////조건문
+//
+//var adult = 19
+//var age = 15
+//
+//if age < adult {
+//    print("당신은 미성년자네요")
+//}else{
+//    print("당신은 성인이네요")
+//}
+//
+//var browser = "Safari"
+//var browserName : String
+//
+//if browser == "IE"
+//{
+//    browserName = "인터넷 익스플로러"
+//}else if browser == "FF"
+//{
+// browserName = "파이어폭스"
+//}else if browser == "Opera"
+//{
+//    browserName = "오페라"
+//}else if browser == "Safari"
+//{
+//    browserName = "사파리"
+//}
+//else
+//{
+//    browserName = "알려지지 않은 브라우저"
+//}
+//
+//print("현재 사용중인 브라우져는 \(browserName)입니다")
+//
+////guard 구문
+//func divide(base : Int)
+//{
+//    guard base != 0 else
+//    { //조건이 참일때는 실행되는 블록이 없음
+//        print("연산할 수 없습니다.")
+//        return
+//    }
+//    
+//    let result = 100 / base
+//    print(result)
+//}
+//
+//divide(0)
+//divide(1)
+//
+////#available 구문 OS버전을 구분하기 위해 사용한다.
+//if #available(iOS 9, OSX 10.10, watchOS 1, *) //마지막은 *로 구분한다.
+//{
+//    //iOS 9, OSX 10.10, watchOS 1 용 API 구문
+//}else{
+//    //API를 사용하지 못했을때에 대한 실패 처리
+//}
+//
+////fallthrough 구문
+////swift에서 switch ~ case문은  각 case 블록마다 사용해야하는 break구문을 생략할 수 있다.
+////case에서 break구문 없이 사용하고 싶을때는 fallthrough을 사용한다.
 
 let sampleChar : Character = "a"
 
@@ -342,7 +342,7 @@ case "a", "b" : // 하나 이상의 조건도 비교가능
     fallthrough
 case "a" : //문자 일치
     print("폴쓰루")
-    fallthrough //다음 케이스로 넘어감
+    //fallthrough //다음 케이스로 넘어감
 case "A" :
     print("글자는 A입니다.")
 
@@ -364,18 +364,18 @@ case let (x, y) : //이 구문으로 모든 패턴을 매칭 시킬수 있어 �
 }
 
 
-//범위도 비교가능
-var passTime = 1957
-switch passTime {
-case 0..<60 :
-    print("방금 작성된 글입니다.")
-case 60..<3600 :
-    print("조금 전 작성된 글입니다.")
-case 3600..<86400 :
-    print("얼마전 작성된 글입니다.")
-default :
-    print("예전에 작성된 글입니다.")
-}
+////범위도 비교가능
+//var passTime = 1957
+//switch passTime {
+//case 0..<60 :
+//    print("방금 작성된 글입니다.")
+//case 60..<3600 :
+//    print("조금 전 작성된 글입니다.")
+//case 3600..<86400 :
+//    print("얼마전 작성된 글입니다.")
+//default :
+//    print("예전에 작성된 글입니다.")
+//}
 
 //where 구문 사용가능
 var point = (3, -3)
@@ -387,7 +387,7 @@ case let (x, y) where x == y :
 case let (x, y) where x == -y :
     print("\(x)과 \(y)은  x == -y 선 상에 있습니다.")
 case let (x, y) :
-    print("\(x)과 \(y)은  일반 좌죠 상에 있습니다.")
+    print("\(x)과 \(y)은  일반 좌표 상에 있습니다.")
 
 }
 

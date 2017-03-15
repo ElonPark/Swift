@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'LottoDrawExample' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for LottoDrawExample
+  pod 'FMDB'
+  target 'LottoDrawExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

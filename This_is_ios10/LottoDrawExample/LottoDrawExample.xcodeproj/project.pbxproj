@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C4CCCC7F2CB9CD657907221 /* Pods_LottoDrawExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8366BD722EAFAEB242FAC44 /* Pods_LottoDrawExample.framework */; };
+		33AEB5E11E73F0870033DE44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB5E01E73F0870033DE44 /* AppDelegate.swift */; };
+		33AEB5E31E73F0870033DE44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB5E21E73F0870033DE44 /* ViewController.swift */; };
+		33AEB5E61E73F0870033DE44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AEB5E41E73F0870033DE44 /* Main.storyboard */; };
+		33AEB5E81E73F0870033DE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AEB5E71E73F0870033DE44 /* Assets.xcassets */; };
+		33AEB5EB1E73F0870033DE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AEB5E91E73F0870033DE44 /* LaunchScreen.storyboard */; };
+		33AEB5F61E73F0870033DE44 /* LottoDrawExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB5F51E73F0870033DE44 /* LottoDrawExampleTests.swift */; };
+		33AEB6011E73F7170033DE44 /* LottoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB6001E73F7170033DE44 /* LottoCell.swift */; };
+		33AEB6021E73F7170033DE44 /* LottoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB6001E73F7170033DE44 /* LottoCell.swift */; };
+		F452FEE4FA2018C67869FA66 /* Pods_LottoDrawExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B0F93CAA5BE81AC588A1FD /* Pods_LottoDrawExampleTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33AEB5F21E73F0870033DE44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33AEB5D51E73F0870033DE44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33AEB5DC1E73F0870033DE44;
+			remoteInfo = LottoDrawExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31233AFC8A847704B36E5CE0 /* Pods-LottoDrawExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottoDrawExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LottoDrawExample/Pods-LottoDrawExample.release.xcconfig"; sourceTree = "<group>"; };
+		3337051D1E75780700BFD7DB /* LottoDrawExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LottoDrawExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		33AEB5DD1E73F0870033DE44 /* LottoDrawExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottoDrawExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AEB5E01E73F0870033DE44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33AEB5E21E73F0870033DE44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33AEB5E51E73F0870033DE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33AEB5E71E73F0870033DE44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33AEB5EA1E73F0870033DE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33AEB5EC1E73F0870033DE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33AEB5F11E73F0870033DE44 /* LottoDrawExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottoDrawExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AEB5F51E73F0870033DE44 /* LottoDrawExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoDrawExampleTests.swift; sourceTree = "<group>"; };
+		33AEB5F71E73F0870033DE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33AEB6001E73F7170033DE44 /* LottoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottoCell.swift; sourceTree = "<group>"; };
+		63B0F93CAA5BE81AC588A1FD /* Pods_LottoDrawExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LottoDrawExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F28F61BC456911F78E90414 /* Pods-LottoDrawExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottoDrawExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LottoDrawExample/Pods-LottoDrawExample.debug.xcconfig"; sourceTree = "<group>"; };
+		817016C3155E51583001D2E2 /* Pods-LottoDrawExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottoDrawExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LottoDrawExampleTests/Pods-LottoDrawExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A8366BD722EAFAEB242FAC44 /* Pods_LottoDrawExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LottoDrawExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13E14655E3117D68A7AEC76 /* Pods-LottoDrawExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottoDrawExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LottoDrawExampleTests/Pods-LottoDrawExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33AEB5DA1E73F0870033DE44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4CCCC7F2CB9CD657907221 /* Pods_LottoDrawExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33AEB5EE1E73F0870033DE44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F452FEE4FA2018C67869FA66 /* Pods_LottoDrawExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33AEB5D41E73F0870033DE44 = {
+			isa = PBXGroup;
+			children = (
+				33AEB5DF1E73F0870033DE44 /* LottoDrawExample */,
+				33AEB5F41E73F0870033DE44 /* LottoDrawExampleTests */,
+				33AEB5DE1E73F0870033DE44 /* Products */,
+				E5571E746C91E681C684C221 /* Pods */,
+				5BD72F3E3E74C9622EAC0936 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33AEB5DE1E73F0870033DE44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33AEB5DD1E73F0870033DE44 /* LottoDrawExample.app */,
+				33AEB5F11E73F0870033DE44 /* LottoDrawExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33AEB5DF1E73F0870033DE44 /* LottoDrawExample */ = {
+			isa = PBXGroup;
+			children = (
+				3337051D1E75780700BFD7DB /* LottoDrawExample-Bridging-Header.h */,
+				33AEB5E01E73F0870033DE44 /* AppDelegate.swift */,
+				33AEB6001E73F7170033DE44 /* LottoCell.swift */,
+				33AEB5E21E73F0870033DE44 /* ViewController.swift */,
+				33AEB5E41E73F0870033DE44 /* Main.storyboard */,
+				33AEB5E71E73F0870033DE44 /* Assets.xcassets */,
+				33AEB5E91E73F0870033DE44 /* LaunchScreen.storyboard */,
+				33AEB5EC1E73F0870033DE44 /* Info.plist */,
+			);
+			path = LottoDrawExample;
+			sourceTree = "<group>";
+		};
+		33AEB5F41E73F0870033DE44 /* LottoDrawExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				33AEB5F51E73F0870033DE44 /* LottoDrawExampleTests.swift */,
+				33AEB5F71E73F0870033DE44 /* Info.plist */,
+			);
+			path = LottoDrawExampleTests;
+			sourceTree = "<group>";
+		};
+		5BD72F3E3E74C9622EAC0936 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8366BD722EAFAEB242FAC44 /* Pods_LottoDrawExample.framework */,
+				63B0F93CAA5BE81AC588A1FD /* Pods_LottoDrawExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5571E746C91E681C684C221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F28F61BC456911F78E90414 /* Pods-LottoDrawExample.debug.xcconfig */,
+				31233AFC8A847704B36E5CE0 /* Pods-LottoDrawExample.release.xcconfig */,
+				B13E14655E3117D68A7AEC76 /* Pods-LottoDrawExampleTests.debug.xcconfig */,
+				817016C3155E51583001D2E2 /* Pods-LottoDrawExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33AEB5DC1E73F0870033DE44 /* LottoDrawExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33AEB5FA1E73F0870033DE44 /* Build configuration list for PBXNativeTarget "LottoDrawExample" */;
+			buildPhases = (
+				061887BA23000A85123CD836 /* [CP] Check Pods Manifest.lock */,
+				33AEB5D91E73F0870033DE44 /* Sources */,
+				33AEB5DA1E73F0870033DE44 /* Frameworks */,
+				33AEB5DB1E73F0870033DE44 /* Resources */,
+				83D3C01C6DEB2D793B85BE4B /* [CP] Embed Pods Frameworks */,
+				0A05F3A9AB9449FF8C4433E8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LottoDrawExample;
+			productName = LottoDrawExample;
+			productReference = 33AEB5DD1E73F0870033DE44 /* LottoDrawExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33AEB5F01E73F0870033DE44 /* LottoDrawExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33AEB5FD1E73F0870033DE44 /* Build configuration list for PBXNativeTarget "LottoDrawExampleTests" */;
+			buildPhases = (
+				1FDAF8C5032AD615FD951C23 /* [CP] Check Pods Manifest.lock */,
+				33AEB5ED1E73F0870033DE44 /* Sources */,
+				33AEB5EE1E73F0870033DE44 /* Frameworks */,
+				33AEB5EF1E73F0870033DE44 /* Resources */,
+				DCB9921F50703762B5A63324 /* [CP] Embed Pods Frameworks */,
+				C9FB9031DC0861BBCD10A6AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33AEB5F31E73F0870033DE44 /* PBXTargetDependency */,
+			);
+			name = LottoDrawExampleTests;
+			productName = LottoDrawExampleTests;
+			productReference = 33AEB5F11E73F0870033DE44 /* LottoDrawExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33AEB5D51E73F0870033DE44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Nebula_Park;
+				TargetAttributes = {
+					33AEB5DC1E73F0870033DE44 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FF89HDESAD;
+						ProvisioningStyle = Automatic;
+					};
+					33AEB5F01E73F0870033DE44 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FF89HDESAD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33AEB5DC1E73F0870033DE44;
+					};
+				};
+			};
+			buildConfigurationList = 33AEB5D81E73F0870033DE44 /* Build configuration list for PBXProject "LottoDrawExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33AEB5D41E73F0870033DE44;
+			productRefGroup = 33AEB5DE1E73F0870033DE44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33AEB5DC1E73F0870033DE44 /* LottoDrawExample */,
+				33AEB5F01E73F0870033DE44 /* LottoDrawExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33AEB5DB1E73F0870033DE44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AEB5EB1E73F0870033DE44 /* LaunchScreen.storyboard in Resources */,
+				33AEB5E81E73F0870033DE44 /* Assets.xcassets in Resources */,
+				33AEB5E61E73F0870033DE44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33AEB5EF1E73F0870033DE44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061887BA23000A85123CD836 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0A05F3A9AB9449FF8C4433E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LottoDrawExample/Pods-LottoDrawExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FDAF8C5032AD615FD951C23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83D3C01C6DEB2D793B85BE4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LottoDrawExample/Pods-LottoDrawExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9FB9031DC0861BBCD10A6AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LottoDrawExampleTests/Pods-LottoDrawExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCB9921F50703762B5A63324 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LottoDrawExampleTests/Pods-LottoDrawExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33AEB5D91E73F0870033DE44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AEB5E31E73F0870033DE44 /* ViewController.swift in Sources */,
+				33AEB6011E73F7170033DE44 /* LottoCell.swift in Sources */,
+				33AEB5E11E73F0870033DE44 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33AEB5ED1E73F0870033DE44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AEB6021E73F7170033DE44 /* LottoCell.swift in Sources */,
+				33AEB5F61E73F0870033DE44 /* LottoDrawExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33AEB5F31E73F0870033DE44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33AEB5DC1E73F0870033DE44 /* LottoDrawExample */;
+			targetProxy = 33AEB5F21E73F0870033DE44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33AEB5E41E73F0870033DE44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33AEB5E51E73F0870033DE44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33AEB5E91E73F0870033DE44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33AEB5EA1E73F0870033DE44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33AEB5F81E73F0870033DE44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33AEB5F91E73F0870033DE44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33AEB5FB1E73F0870033DE44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F28F61BC456911F78E90414 /* Pods-LottoDrawExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FF89HDESAD;
+				INFOPLIST_FILE = LottoDrawExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.nebula-park.LottoDrawExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		33AEB5FC1E73F0870033DE44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31233AFC8A847704B36E5CE0 /* Pods-LottoDrawExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FF89HDESAD;
+				INFOPLIST_FILE = LottoDrawExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.nebula-park.LottoDrawExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		33AEB5FE1E73F0870033DE44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B13E14655E3117D68A7AEC76 /* Pods-LottoDrawExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FF89HDESAD;
+				INFOPLIST_FILE = LottoDrawExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.nebula-park.LottoDrawExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LottoDrawExample.app/LottoDrawExample";
+			};
+			name = Debug;
+		};
+		33AEB5FF1E73F0870033DE44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817016C3155E51583001D2E2 /* Pods-LottoDrawExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FF89HDESAD;
+				INFOPLIST_FILE = LottoDrawExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.nebula-park.LottoDrawExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LottoDrawExample.app/LottoDrawExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33AEB5D81E73F0870033DE44 /* Build configuration list for PBXProject "LottoDrawExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33AEB5F81E73F0870033DE44 /* Debug */,
+				33AEB5F91E73F0870033DE44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33AEB5FA1E73F0870033DE44 /* Build configuration list for PBXNativeTarget "LottoDrawExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33AEB5FB1E73F0870033DE44 /* Debug */,
+				33AEB5FC1E73F0870033DE44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33AEB5FD1E73F0870033DE44 /* Build configuration list for PBXNativeTarget "LottoDrawExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33AEB5FE1E73F0870033DE44 /* Debug */,
+				33AEB5FF1E73F0870033DE44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33AEB5D51E73F0870033DE44 /* Project object */;
+}
